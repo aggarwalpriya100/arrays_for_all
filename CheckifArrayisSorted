@@ -1,0 +1,27 @@
+/*
+
+🟢 Question 8/16 — Check if Array is Sorted
+
+This is the last question of Pattern 1. 🎯
+
+Example 1
+arr = [1, 2, 3, 4, 5]
+
+This is sorted in ascending order:
+
+1 ≤ 2 ≤ 3 ≤ 4 ≤ 5
+
+✅ true
+
+*/
+
+class Solution{
+	public boolean isSorted(int[]nums){
+		for(int i = 1 ; i<nums.length ; i++){
+			if(nums[i] < nums[i-1]){
+				return false ;
+			}
+		}
+				return true; 		
+	}
+}
